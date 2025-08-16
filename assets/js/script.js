@@ -1,3 +1,8 @@
+document.addEventListener('contextmenu' , (e)=>{
+    e.preventDefault()
+    alert('Right Click has been blocked')
+})
+
 const fuhadShiblu_inp           = document.querySelector('.fuhadShiblu_inp');
 const fuhadShiblu_btn           = document.querySelector('.fuhadShiblu_btn');
 const fuhadShiblu_err           = document.querySelector('.fuhadShiblu_err');
