@@ -64,10 +64,14 @@ fuhadShiblu_btn.addEventListener('click' , (e)=>{
                 fuhadShiblu_circle.innerHTML    = '<i class="fa-solid fa-check"></i>'
                 fuhadShiblu_circle.style        = 'color:#fff;font-size:15px;border:1px solid #78C841;background:#78C841'
                 fuhadShiblu_rsltInp.style       = 'text-decoration:line-through;color:red'
+                fuhadShiblu_edit.innerHTML  = '<i class="fa-solid fa-pen-to-square"></i>'
+                fuhadShiblu_rsltInp.setAttribute('readonly' , 'readonly')
+                fuhadShiblu_edit.style  = 'display:none'
             }else{
                 fuhadShiblu_circle.innerHTML    = ''
                 fuhadShiblu_circle.style        = 'border:1px solid #fff'
                 fuhadShiblu_rsltInp.style       = 'text-decoration:none;color:#fff'
+                fuhadShiblu_edit.style  = 'display:block'
             }
         })
     }
